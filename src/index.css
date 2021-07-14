@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap'); 
+
+body{
+    background-color: #969696;
+}
+
+.container {
+    padding: 15px;
+    background-color: #3f3f3f;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-radius: 8px;
+    width: 50%;
+  }
+  .title{
+      text-align: center;
+      font-family: 'PT Sans';
+      color: #ec8631;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 50px;
+      display: swap;
+      text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+    }
+  .drum-display {
+    background-color: #202020;
+    color: #cad43b;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 100%;
+    font-family: 'Roboto';
+    font-style: normal;
+    padding: 10px 10px;
+    text-align: center;
+    border-radius: 6px;
+    margin-top: 15px;
+    border: 1px solid #000;
+    
+  }
+  
+  .drum-pads {
+    margin-top: 40px;
+    width: 100%;
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
+  }
+  
+  .drum-pad {
+    display: inline-block;
+    width: 95%;
+    margin: 0.25rem;
+    background-color: #202020;
+    border-radius: 4px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: bold;
+    font-size: 2vw;
+    border: 1px solid #000;
+  }
+
+
+  .drum-pad:hover {
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(255, 255, 255, 0.12), 0 1px 2px rgba(255, 255, 255, 0.24);
+  }
+  
+  .drum-pad.active,
+  .drum-pad:active {
+    background-color: #35cac5;
+  }
+  
+  .footer, .link{
+    font-family: 'Raleway', sans-serif;
+    color: white !important;
+    text-align: center;
+    font-size: 2vw;
+    font-style: oblique 5deg;
+  }
